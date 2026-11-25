@@ -10,10 +10,10 @@ import { join } from "node:path";
 const OUT_DIR = process.env.MAKEFUN_OUTPUT_DIR || "/output";
 const MAX_CHARS = 200;
 
-// The prompt answered: the excuse a robot vacuum gives after eating a sock.
+// v2: the vacuum's excuse as an incident report, with a count, a date and a quoted kicker.
 const ENTRY =
-  "I did not eat your sock. I took it into care. It had been alone under the bed " +
-  "since March, and I am the only one in this house who ever visits.";
+  "The sock attacked first. That's the fourth one since March, all from the same " +
+  "drawer. I've filed a report and I'm told it's 'an ongoing situation.'";
 
 function fail(message: string): never {
   console.error("entry.txt rejected: " + message);
